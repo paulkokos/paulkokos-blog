@@ -3,13 +3,16 @@ import HeaderLink from './HeaderLink.astro';
 import { SITE_TITLE } from '../consts';
 ---
 
-<header>
+<header class=" fixed w-full pq2 z-20 backdrop-blur-md">
+	<div class="mx-auto max-w-3xl ">
+
 	<nav>
 		<h2><a href="/">{SITE_TITLE}</a></h2>
 		<div class="internal-links">
 			<HeaderLink href="/">Home</HeaderLink>
 			<HeaderLink href="/blog">Blog</HeaderLink>
 			<HeaderLink href="/about">About</HeaderLink>
+			<HeaderLink href="https://github.com/paulkokos" target="_blank">Source</HeaderLink>
 		</div>
 		<div class="social-links">
 			<a href="https://m.webtoo.ls/@astro" target="_blank">
@@ -41,6 +44,7 @@ import { SITE_TITLE } from '../consts';
 			</a>
 		</div>
 	</nav>
+	</div>
 </header>
 <style>
 	header {
